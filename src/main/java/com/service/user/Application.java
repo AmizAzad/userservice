@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Application {
 
-	@GetMapping
+	@GetMapping("/message")
 	public String getMessage() {
 		return "This is a User Microservice";
 	}
