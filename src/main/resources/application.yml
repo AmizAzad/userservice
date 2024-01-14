@@ -1,0 +1,6 @@
+spring:
+    data:
+        mongodb:
+            database: User
+            host: mongoDBContainer
+            port: 27017
