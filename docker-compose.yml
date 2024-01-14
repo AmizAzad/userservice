@@ -1,0 +1,14 @@
+version: "3"
+services:
+    mongoDBContainer:
+        image: mongo:latest
+        container_name: "mongoDBContainer"
+        ports:
+            - 27017:27017
+    userservice-mongo:
+        image: amizazad/userservice:v1.0
+        container_name: userservice-mongo
+        ports:
+            - 9090:8080
+        links:
+            - mongoDBContainer

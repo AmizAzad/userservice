@@ -13,7 +13,7 @@ import com.service.user.model.User;
 import com.service.user.repository.UserRepository;
 
 @RestController
-@RequestMapping("users")
+@RequestMapping("/users")
 public class UserController {
 
 	@Autowired
